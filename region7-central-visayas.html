@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fili-Foodia</title>
+
+  <!-- Fonts and Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style-ncr.css" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .header-bg {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      filter: brightness(0.6);
+    }
+
+    .header-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .header-content h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .most-famous {
+      background-color: #0e3250;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      padding: 10px;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .dish-section {
+       display: flex;
+       align-items: center; /* center horizontally */
+       justify-content: center; /* center vertically */
+       padding: 40px 20px;
+       gap: 30px;
+       text-align: center;
+    }
+
+    .dish-image {
+        width: 200px; /* adjust as needed */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+      
+    }
+
+    .dish-text {
+      flex: 2;
+      padding: 20px;
+      max-width: 700px;
+    }
+
+    .dish-text h4 {
+      font-size: 30px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .dish-text p {
+      font-size: 16px;
+      color:#444;
+      line-height: 1.6;
+   
+    }
+
+    .recipe-section {
+      padding: 40px 20px;
+      background-color: #ffffff;
+    }
+
+    .recipe-section h3 {
+      color: #4682B4;
+      font-size: 26px;
+      margin-bottom: 10px;
+      font-family: sans-serif;
+ 
+    }
+
+    .recipe-section p {
+      font-size: 18px;
+      margin-top: 20px;
+      font-weight: bold;
+
+    }
+
+    .recipe-section ul, .recipe-section ol {
+      margin-left: 30px;
+      margin-top: 10px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .recipe-section h4 {
+      color: #4682B4;
+      font-size: 22px;
+      margin-top: 30px;
+    }
+
+    .questions-section {
+      text-align: center;
+      padding: 30px;
+      background-color: #f8f8f8;
+    }
+
+    .email-button {
+      background-color: #007BFF;
+      color:white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #0e3250;
+    color: whitesmoke;
+    font-size: 14px;
+    user-select: none;
+  }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="linking.html" class="logo-link">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_the_Philippines.svg" alt="Philippine flag" class="flag-icon"/>
+        <span class="logo-text">Fili-Foodia</span>
+      </a>
+    </div>
+    <ul class="navbar-menu">
+      <li><a href="linking.html">HOME</a></li>
+
+      <!-- Luzon -->
+      <li class="dropdown">
+        <a href="#">Luzon Cuisine</a>
+        <ul class="dropdown-menu">
+            <li><a href="region1-ilocos.html">Region I - Ilocos</a></li>
+          <li><a href="region2-cagayan.html">Region II - Cagayan Valley</a></li>
+          <li><a href="region3-central-luzon.html">Region III - Central Luzon</a></li>
+          <li><a href="region4a-calabarzon.html">Region IV-A - CALABARZON</a></li>
+          <li><a href="region5b-mimaropa.html">Region V-B - MIMAROPA</a></li>
+          <li><a href="region5-bicol.html">Region V - Bicol Region</a></li>
+         
+        </ul>
+      </li>
+
+      <!-- Visayas -->
+      <li class="dropdown">
+        <a href="#">Visayas Cuisine</a>
+        <ul class="dropdown-menu">
+          <li><a href="region6-western-visayas.html">Region VI - Western Visayas</a></li>
+          <li><a href="region7-central-visayas.html">Region VII - Central Visayas</a></li>
+          <li><a href="region8-eastern-visayas.html">Region VIII - Eastern Visayas</a></li>
+        </ul>
+      </li>
+
+      <!-- Mindanao -->
+      <li class="dropdown">
+        <a href="#">Mindanao Cuisine</a>
+        <ul class="dropdown-menu">
+          <li><a href="region9-zamboanga.html">Region IX - Zamboanga</a></li>
+          <li><a href="region10-northern-mindanao.html">Region X - Northern Mindanao</a></li>
+          <li><a href="region11-davao.html">Region XI - Davao Region</a></li>
+          <li><a href="region12-soccskargen.html">Region XII - SOCCSKSARGEN</a></li>
+          <li><a href="barmm-bangsamoro.html">BARMM - Bangsamoro</a></li>
+          <li><a href="region13-caraga.html">Region XIII - Caraga</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#"><i class="fas fa-search"></i></a></li>
+    </ul>
+  </nav>
+  <!-- Navbar -->
+  <!-- (Navbar code remains unchanged) -->
+
+  <!-- Header with Image -->
+  <header class="header">
+    <img src="https://www.seriouseats.com/thmb/BBksd7FXnrkxFa8Dipf_LmgP9HA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Filipino-Features-Hero-Final-2-b785e627967843b0aa631c6a977adabe.jpg" class="header-bg" />
+    <div class="header-content">
+      <h1>Region VII (Central Visayas)</h1>
+    </div>
+  </header>
+
+  <!-- Most Famous Dish -->
+  <div class="most-famous">
+    <h5>Most Famous Dish in Region VII</h5>
+  </div>
+
+  <!-- Dish Section -->
+  <section class="dish-section">
+    <img src="https://www.thefooddictator.com/wp-content/uploads/2019/01/cebulechon.jpg" alt="Cebu Lechon" class="dish-image">
+    <div class="dish-text">
+      <h4>Cebu Lechon</h4>
+      <p>Lechon, derived from a Spanish word for roasted suckling pig is one of the most popular dishes in the Philippines. Unlike in other regions in the Philippines, Cebu's lechon is known for its crispy crust achieved through its unique roasting method. The lechon in Cebu is unique due to the combination of herbs and spices used to marinate the meat before roasting. </p>
+    </div>
+  </section>
+
+  <!-- Recipe Section -->
+<section class="recipe-section">
+    <h2>How to Cook Cebu Lechon?</h2>
+  
+    <h4>Ingredients:</h4>
+    <ul>
+      <li>1 whole native pig (live weight 18 – 20 kilos)</li>
+      <li>salt and black pepper to taste</li>
+      <li>soy sauce</li>
+      <p>For the glaze:</p>
+      <li>1 liter of Pepsi (if you want to achieve a red color lechon skin: 3 part of evaporated milk + 1 part of water)</li>
+      <p>For the stuffing:</p>
+      <li>10 bundles lemon grass (tanglad)</li>
+      <li>1/4 cup star anise</li>
+      <li>6 pieces of laurel or bay leaves (cut into small parts)</li>
+      <li>5 cups of crushed garlic</li>
+      <li>2 kilos green onion leaves</li>
+      <li>8 pieces of halved saba bananas, half-cooked through boiling (optional)</li>
+      <p>Materials Needed:</p>
+      <li>Medium Bamboo</li>
+      <li>Needles and thread for stitching</li>
+      <li>Clean sponge</li>
+    </ul>
+  
+    <h4>Instructions:</h4>
+    <p><Lechon Preparation:></p>
+    <ol>
+      <li>Remove hair follicles from the pig’s skin and the innards. </li>
+      <li>Rinse the pig and clean the inside, wash and scrub the lumps of blood inside the stomach until thoroughly clean. </li>
+      <li>Pour hot water inside the pig and partly slice the rib part.</li>
+      <li>Pat it dry and rub the pig with salt and pepper from inside and out. </li>
+      <li>Brush the inside belly with enough or little soy sauce.</li>
+      <li>Once done, stuff the belly with saba bananas (plantain), anise, green onion leaves, crushed garlic and laurel leaves. </li>
+      <li>Stack it with a bundle of lemon grass in the stomach center. </li>
+      <li>Lock it by stitching the belly. Stitch it well so that ingredients will not spill out when you start to roast it.</li>
+      <li>Prepare a mid size bamboo and skewer the pig and split roast over hot charcoal. Do not put the charcoal directly underneath the belly of the pig but over both sides, slowly churning the pig roast.</li>
+      <li>Constantly glaze pig while it slowly roast with milk or pepsi using a sponge. This will make the skin extra crispy.</li>
+      <li>Roast for a 3 to 4 hours until the meat is tender. Do not overcooked.</li>
+      <li>The spices and the lemongrass is what really make Cebu lechon so flavourful, aromatic with rich succulent taste.</li>
+    </ol>
+  
+  </section>
+  
+  
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Fili-Foodia. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>

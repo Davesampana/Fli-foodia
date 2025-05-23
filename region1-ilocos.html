@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fili-Foodia</title>
+
+  <!-- Fonts and Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style-ncr.css" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .header-bg {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      filter: brightness(0.6);
+    }
+
+    .header-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .header-content h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .most-famous {
+      background-color: #0e3250;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      padding: 10px;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .dish-section {
+       display: flex;
+       align-items: center; /* center horizontally */
+       justify-content: center; /* center vertically */
+       padding: 40px 20px;
+       gap: 30px;
+       text-align: center;
+    }
+
+    .dish-image {
+        width: 200px; /* adjust as needed */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+      
+    }
+
+    .dish-text {
+      flex: 2;
+      padding: 20px;
+      max-width: 700px;
+    }
+
+    .dish-text h4 {
+      font-size: 30px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .dish-text p {
+      font-size: 16px;
+      color:#444;
+      line-height: 1.6;
+   
+    }
+
+    .recipe-section {
+      padding: 40px 20px;
+      background-color: #ffffff;
+    }
+
+    .recipe-section h3 {
+      color: #4682B4;
+      font-size: 26px;
+      margin-bottom: 10px;
+      font-family: sans-serif;
+ 
+    }
+
+    .recipe-section p {
+      font-size: 18px;
+      margin-top: 20px;
+      font-weight: bold;
+
+    }
+
+    .recipe-section ul, .recipe-section ol {
+      margin-left: 30px;
+      margin-top: 10px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .recipe-section h4 {
+      color: #4682B4;
+      font-size: 22px;
+      margin-top: 30px;
+    }
+
+    .questions-section {
+      text-align: center;
+      padding: 30px;
+      background-color: #f8f8f8;
+    }
+
+    .email-button {
+      background-color: #007BFF;
+      color:white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0e3250;
+      color: #fff;
+    }
+    
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="linking.html" class="logo-link">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_the_Philippines.svg" alt="Philippine flag" class="flag-icon"/>
+        <span class="logo-text">Fili-Foodia</span>
+      </a>
+    </div>
+    <ul class="navbar-menu">
+      <li><a href="linking.html">HOME</a></li>
+
+      <!-- Luzon -->
+      <li class="dropdown">
+        <a href="#">Luzon Cuisine</a>
+        <ul class="dropdown-menu">
+            <li><a href="region1-ilocos.html">Region I - Ilocos</a></li>
+          <li><a href="region2-cagayan.html">Region II - Cagayan Valley</a></li>
+          <li><a href="region3-central-luzon.html">Region III - Central Luzon</a></li>
+          <li><a href="region4a-calabarzon.html">Region IV-A - CALABARZON</a></li>
+          <li><a href="region5b-mimaropa.html">Region V-B - MIMAROPA</a></li>
+          <li><a href="region5-bicol.html">Region V - Bicol Region</a></li>
+          
+        </ul>
+      </li>
+
+      <!-- Visayas -->
+      <li class="dropdown">
+        <a href="#">Visayas Cuisine</a>
+        <ul class="dropdown-menu">
+          <li><a href="region6-western-visayas.html">Region VI - Western Visayas</a></li>
+          <li><a href="region7-central-visayas.html">Region VII - Central Visayas</a></li>
+          <li><a href="region8-eastern-visayas.html">Region VIII - Eastern Visayas</a></li>
+        </ul>
+      </li>
+
+      <!-- Mindanao -->
+      <li class="dropdown">
+        <a href="#">Mindanao Cuisine</a>
+        <ul class="dropdown-menu">
+          <li><a href="region9-zamboanga.html">Region IX - Zamboanga</a></li>
+          <li><a href="region10-northern-mindanao.html">Region X - Northern Mindanao</a></li>
+          <li><a href="region11-davao.html">Region XI - Davao Region</a></li>
+          <li><a href="region12-soccskargen.html">Region XII - SOCCSKSARGEN</a></li>
+          <li><a href="barmm-bangsamoro.html">BARMM - Bangsamoro</a></li>
+          <li><a href="region13-caraga.html">Region XIII - Caraga</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#"><i class="fas fa-search"></i></a></li>
+    </ul>
+  </nav>
+  <!-- Navbar -->
+  <!-- (Navbar code remains unchanged) -->
+
+  <!-- Header with Image -->
+  <header class="header">
+    <img src="https://www.seriouseats.com/thmb/BBksd7FXnrkxFa8Dipf_LmgP9HA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Filipino-Features-Hero-Final-2-b785e627967843b0aa631c6a977adabe.jpg" class="header-bg" />
+    <div class="header-content">
+      <h1>Region I (Ilocos Region)</h1>
+    </div>
+  </header>
+
+  <!-- Most Famous Dish -->
+  <div class="most-famous">
+    <h5>Most Famous Dish in Region I</h5>
+  </div>
+
+  <!-- Dish Section -->
+  <section class="dish-section">
+    <img src="https://curiousflavors.com/wp-content/uploads/2023/01/Untitled-design-24.jpg" alt="Pinakbet" class="dish-image">
+    <div class="dish-text">
+      <h4>Pinakbet Ilocano</h4>
+      <p>Walastik Pares is a version of Beef Pares created by Wilber Ramos made with a slightly thick sauce and instead of just the usual beef cuts, beef innards are used such as brains, intestines, bone marrow and tendons to name some.</p>
+    </div>
+  </section>
+
+  <!-- Recipe Section -->
+<section class="recipe-section">
+    <h2>How to Cook Walastik Pares?</h2>
+  
+    <p>Ingredients:</p>
+    <ul>
+      <li>8 round eggplants</li>
+      <li>2 bitter gourd small</li>
+      <li>1 bundle string beans</li>
+      <li>⅔ cup squash</li>
+      <li>8 pieces Okra</li>
+      <li>2 Tomatoes</li>
+      <li>2 Onions</li>
+      <li>2 Garlic cloves</li>
+      <li>1 Ginger small piece</li>
+      <li>Water</li>
+      <li>1 lb Pork Belly</li>
+      <li>¼ cup anchovy sauce</li>
+      <li>Salt & pepper to taste</li>
+    </ul>
+  
+    <h4>Instructions:</h4>
+    <p><strong>For the Bagnet or Fried Pork Belly</strong></p>
+    <ol>
+      <li>Place the pork belly in a deep pot and cover with water. Add the peppercorns and let it boil. Simmer for 20 minutes.</li>
+      <li>Remove the boiled pork belly from the pot and let it cool.</li>
+      <li>Heat oil in a frying pan. Gently add the pork belly and deep fry on medium heat until the pork turns crispy.</li>
+      <li>Remove the pork belly from the pan and let it cool down.</li>
+      <li>Once cool, slice the pork bagnet into bite-sized pieces and set aside.</li>
+    </ol>
+  
+    <p><strong>For the Pinakbet</strong></p>
+    <ol>
+      <li>Cut the round eggplants in half and cut the tomatoes and onions in chunks.</li>
+      <li>Crush the garlic and slice the ginger in thin slices. Set aside.</li>
+      <li>In a large pot bring water to boil. Add the anchovy sauce and wait for it to boil one more time.</li>
+      <li>Add the vegetables: squash, okra, seedless bitter melon, eggplant, string beans, tomato, onions, garlic, and ginger.</li>
+      <li>Simmer for 15 minutes until the vegetables are cooked.</li>
+      <li>Add the sliced bagnet and mix well.</li>
+      <li>Transfer to a serving plate and enjoy hot by itself or with a side of rice.</li>
+    </ol>
+  </section>
+  
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Fili-Foodia. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>

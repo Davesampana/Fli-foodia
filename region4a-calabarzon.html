@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fili-Foodia</title>
+
+  <!-- Fonts and Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style-ncr.css" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .header-bg {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      filter: brightness(0.6);
+    }
+
+    .header-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .header-content h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .most-famous {
+      background-color: #0e3250;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      padding: 10px;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .dish-section {
+       display: flex;
+       align-items: center; /* center horizontally */
+       justify-content: center; /* center vertically */
+       padding: 40px 20px;
+       gap: 30px;
+       text-align: center;
+    }
+
+    .dish-image {
+        width: 200px; /* adjust as needed */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+      
+    }
+
+    .dish-text {
+      flex: 2;
+      padding: 20px;
+      max-width: 700px;
+    }
+
+    .dish-text h4 {
+      font-size: 30px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .dish-text p {
+      font-size: 16px;
+      color:#444;
+      line-height: 1.6;
+   
+    }
+
+    .recipe-section {
+      padding: 40px 20px;
+      background-color: #ffffff;
+    }
+
+    .recipe-section h3 {
+      color: #4682B4;
+      font-size: 26px;
+      margin-bottom: 10px;
+      font-family: sans-serif;
+ 
+    }
+
+    .recipe-section p {
+      font-size: 18px;
+      margin-top: 20px;
+      font-weight: bold;
+
+    }
+
+    .recipe-section ul, .recipe-section ol {
+      margin-left: 30px;
+      margin-top: 10px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .recipe-section h4 {
+      color: #4682B4;
+      font-size: 22px;
+      margin-top: 30px;
+    }
+
+    .questions-section {
+      text-align: center;
+      padding: 30px;
+      background-color: #f8f8f8;
+    }
+
+    .email-button {
+      background-color: #007BFF;
+      color:white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #0e3250;
+    color: whitesmoke;
+    font-size: 14px;
+    user-select: none;
+  }
+    
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="linking.html" class="logo-link">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_the_Philippines.svg" alt="Philippine flag" class="flag-icon"/>
+        <span class="logo-text">Fili-Foodia</span>
+      </a>
+    </div>
+    <ul class="navbar-menu">
+      <li><a href="linking.html">HOME</a></li>
+
+      <!-- Luzon -->
+      <li class="dropdown">
+        <a href="#">Luzon Cuisine</a>
+        <ul class="dropdown-menu">
+            <li><a href="region1-ilocos.html">Region I - Ilocos</a></li>
+          <li><a href="region2-cagayan.html">Region II - Cagayan Valley</a></li>
+          <li><a href="region3-central-luzon.html">Region III - Central Luzon</a></li>
+          <li><a href="region4a-calabarzon.html">Region IV-A - CALABARZON</a></li>
+          <li><a href="region5b-mimaropa.html">Region V-B - MIMAROPA</a></li>
+          <li><a href="region5-bicol.html">Region V - Bicol Region</a></li>
+         
+        </ul>
+      </li>
+
+      <!-- Visayas -->
+      <li class="dropdown">
+        <a href="#">Visayas Cuisine</a>
+        <ul class="dropdown-menu">
+          <li><a href="region6-western-visayas.html">Region VI - Western Visayas</a></li>
+          <li><a href="region7-central-visayas.html">Region VII - Central Visayas</a></li>
+          <li><a href="region8-eastern-visayas.html">Region VIII - Eastern Visayas</a></li>
+        </ul>
+      </li>
+
+      <!-- Mindanao -->
+      <li class="dropdown">
+        <a href="#">Mindanao Cuisine</a>
+        <ul class="dropdown-menu">
+          <li><a href="region9-zamboanga.html">Region IX - Zamboanga</a></li>
+          <li><a href="region10-northern-mindanao.html">Region X - Northern Mindanao</a></li>
+          <li><a href="region11-davao.html">Region XI - Davao Region</a></li>
+          <li><a href="region12-soccskargen.html">Region XII - SOCCSKSARGEN</a></li>
+          <li><a href="barmm-bangsamoro.html">BARMM - Bangsamoro</a></li>
+          <li><a href="region13-caraga.html">Region XIII - Caraga</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#"><i class="fas fa-search"></i></a></li>
+    </ul>
+  </nav>
+  <!-- Navbar -->
+  <!-- (Navbar code remains unchanged) -->
+
+  <!-- Header with Image -->
+  <header class="header">
+    <img src="https://www.seriouseats.com/thmb/BBksd7FXnrkxFa8Dipf_LmgP9HA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Filipino-Features-Hero-Final-2-b785e627967843b0aa631c6a977adabe.jpg" class="header-bg" />
+    <div class="header-content">
+      <h1>Region IV-A (CALABARZON)</h1>
+    </div>
+  </header>
+
+  <!-- Most Famous Dish -->
+  <div class="most-famous">
+    <h5>Most Famous Dish in Region IV-A</h5>
+  </div>
+
+  <!-- Dish Section -->
+  <section class="dish-section">
+    <img src="https://www.maggi.ph/sites/default/files/styles/home_stage_944_531/public/srh_recipes/355f1536e14b00c73661fea734603b3d.jpg?h=561fe1eb&itok=_AP46SzL" alt="Pancit Lucban" class="dish-image">
+    <div class="dish-text">
+      <h4>Pancit Lucban</h4>
+      <p>Pancit Lucban is a pancit version that originated from the Quezon province. This noodle dish might look like the traditional Pancit Canton, but there are some notable differences. Pancit Lucban uses dried flour noodles which are known as miki Lucban.  </p>
+    </div>
+  </section>
+
+  <!-- Recipe Section -->
+<section class="recipe-section">
+    <h2>How to Cook Pancit Lucban?</h2>
+  
+    <p>Ingredients:</p>
+    <ul>
+      <li>1 lb. Miki Lucban</li>
+      <li>1/2 lb. pork belly thinly sliced and chopped</li>
+      <li>4 to 5 cups beef broth</li>
+      <li>1/2 lb. shrimp cleaned</li>
+      <li>1/4 lb. pig's liver sliced</li>
+      <li>1 piece chayote sliced</li>
+      <li>1 cup bok choy or pechay, chopped</li>
+      <li>1 cup snap pea or snow pea</li>
+      <li>3/4 cup shredded carrots</li>
+      <li>1 medium onion sliced</li>
+      <li>5 cloves garlic crushed</li>
+      <li>4 tablespoons cooking oil</li>
+      <li>5 tablespoons soy sauce</li>
+      <li>1/2 teaspoon ground black pepper</li>
+      <li>Banana leaf cleaned and cut into 5 x 5 inch pieces</li>
+    </ul>
+  
+    <h4>Instructions:</h4>
+    <ol>
+      <li>Heat 3 tablespoons of cooking oil in a wide cooking pot.</li>
+      <li>Stir-fry the chayote, snap pea, carrots, and bok choy for 3 to 4 minutes. Set aside.</li>
+      <li>On the same cooking pot, add remaining oil. Put-in the pork slices. Cook for 5 minutes or until the oil from the pork comes out.</li>
+      <li>Put-in the onion and garlic. Cook for 2 minutes.</li>
+      <li>Add the liver. Stir.</li>
+      <li>Add the shrimp. Cook each side for 1 minute. Remove the shrimp and then set aside.</li>
+      <li>Sprinkle the ground black pepper and pour-in soy sauce.</li>
+      <li>Pour-in the beef broth. Let boil. Simmer for 20 minutes.</li>
+      <li>Put-in the Miki Lucban noodles. Cook while stirring until the noodles absorbs the liquid.</li>
+      <li>Add half of the stir-fried vegetables. Stir.</li>
+      <li>Arrange on top of each banana leaf and then top with shrimp and more vegetables.</li>
+      <li>Serve. Share and enjoy!</li>
+    </ol>
+  </section>
+  
+  
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Fili-Foodia. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>

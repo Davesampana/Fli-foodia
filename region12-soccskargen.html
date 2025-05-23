@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fili-Foodia</title>
+
+  <!-- Fonts and Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style-ncr.css" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .header-bg {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      filter: brightness(0.6);
+    }
+
+    .header-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .header-content h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .most-famous {
+      background-color: #0e3250;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      padding: 10px;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .dish-section {
+       display: flex;
+       align-items: center; 
+       justify-content: center; 
+       padding: 40px 20px;
+       gap: 30px;
+       text-align: center;
+    }
+
+    .dish-image {
+        width: 200px; 
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+      
+    }
+
+    .dish-text {
+      flex: 2;
+      padding: 20px;
+      max-width: 700px;
+    }
+
+    .dish-text h4 {
+      font-size: 30px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .dish-text p {
+      font-size: 16px;
+      color:#444;
+      line-height: 1.6;
+   
+    }
+
+    .recipe-section {
+      padding: 40px 20px;
+      background-color: #ffffff;
+    }
+
+    .recipe-section h3 {
+      color: #4682B4;
+      font-size: 26px;
+      margin-bottom: 10px;
+      font-family: sans-serif;
+ 
+    }
+
+    .recipe-section p {
+      font-size: 18px;
+      margin-top: 20px;
+      font-weight: bold;
+
+    }
+
+    .recipe-section ul, .recipe-section ol {
+      margin-left: 30px;
+      margin-top: 10px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .recipe-section h4 {
+      color: #4682B4;
+      font-size: 22px;
+      margin-top: 30px;
+    }
+
+    .questions-section {
+      text-align: center;
+      padding: 30px;
+      background-color: #f8f8f8;
+    }
+
+    .email-button {
+      background-color: #007BFF;
+      color:white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #0e3250;
+    color: whitesmoke;
+    font-size: 14px;
+    user-select: none;
+  }
+    
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="linking.html" class="logo-link">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_the_Philippines.svg" alt="Philippine flag" class="flag-icon"/>
+        <span class="logo-text">Fili-Foodia</span>
+      </a>
+    </div>
+    <ul class="navbar-menu">
+      <li><a href="linking.html">HOME</a></li>
+
+      <!-- Luzon -->
+      <li class="dropdown">
+        <a href="#">Luzon Cuisine</a>
+        <ul class="dropdown-menu">
+            <li><a href="region1-ilocos.html">Region I - Ilocos</a></li>
+          <li><a href="region2-cagayan.html">Region II - Cagayan Valley</a></li>
+          <li><a href="region3-central-luzon.html">Region III - Central Luzon</a></li>
+          <li><a href="region4a-calabarzon.html">Region IV-A - CALABARZON</a></li>
+          <li><a href="region5b-mimaropa.html">Region V-B - MIMAROPA</a></li>
+          <li><a href="region5-bicol.html">Region V - Bicol Region</a></li>
+          
+        </ul>
+      </li>
+
+      <!-- Visayas -->
+      <li class="dropdown">
+        <a href="#">Visayas Cuisine</a>
+        <ul class="dropdown-menu">
+          <li><a href="region6-western-visayas.html">Region VI - Western Visayas</a></li>
+          <li><a href="region7-central-visayas.html">Region VII - Central Visayas</a></li>
+          <li><a href="region8-eastern-visayas.html">Region VIII - Eastern Visayas</a></li>
+        </ul>
+      </li>
+
+      <!-- Mindanao -->
+      <li class="dropdown">
+        <a href="#">Mindanao Cuisine</a>
+        <ul class="dropdown-menu">
+          <li><a href="region9-zamboanga.html">Region IX - Zamboanga</a></li>
+          <li><a href="region10-northern-mindanao.html">Region X - Northern Mindanao</a></li>
+          <li><a href="region11-davao.html">Region XI - Davao Region</a></li>
+          <li><a href="region12-soccskargen.html">Region XII - SOCCSKSARGEN</a></li>
+          <li><a href="barmm-bangsamoro.html">BARMM - Bangsamoro</a></li>
+          <li><a href="region13-caraga.html">Region XIII - Caraga</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#"><i class="fas fa-search"></i></a></li>
+    </ul>
+  </nav>
+ 
+
+  <!-- Header with Image -->
+  <header class="header">
+    <img src="https://www.seriouseats.com/thmb/BBksd7FXnrkxFa8Dipf_LmgP9HA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Filipino-Features-Hero-Final-2-b785e627967843b0aa631c6a977adabe.jpg" class="header-bg" />
+    <div class="header-content">
+      <h1>Region XII (SOCCSKSARGEN)</h1>
+    </div>
+  </header>
+
+  <!-- Most Famous Dish -->
+  <div class="most-famous">
+    <h5>Most Famous Dish in Region XII</h5>
+  </div>
+
+  <!-- Dish Section -->
+  <section class="dish-section">
+    <img src="https://panlasangpinoy.com/wp-content/uploads/2016/10/Nilasing-na-Tilapia.jpg" alt="Nilasing na Tilapia" class="dish-image">
+    <div class="dish-text">
+      <h4>Nilasing na Tilapia</h4>
+      <p>Nilasing na Tilapia refers to a fried tilapia dish wherein the fish is seasoned and marinated in wine and then fried until crispy and golden brown. It is served with spicy vinegar such as sinamak or pinakurat. It is easy to prepare nilasing na tilapia. </p>
+    </div>
+  </section>
+
+  <!-- Recipe Section -->
+<section class="recipe-section">
+    <h2>How to Cook Nilasing na Tilapia?</h2>
+  
+    <p>Ingredients:</p>
+    <ul>
+      <li>1 piece tilapia (scales and innards removed)</li>
+      <li>1 tablespoon coarse sea salt</li>
+      <li>½ teaspoon ground black pepper</li>
+      <li>1 teaspoon garlic powder</li>
+      <li>¼ cup cornstarch</li>
+      <li>½ cup all-purpose flour</li>
+      <li>¾ cup cooking wine (sherry or shaoxing)</li>
+      <li>1 ½ cups cooking oil</li>
+
+    </ul>
+  
+    <h4>Instructions:</h4>
+
+    <ol>
+      <li>Season both sides of the tilapia with salt, ground black pepper, and garlic powder. Rub all over the fish including the cavity.</li>
+      <li>Arrange a fish in a deep plate. Pour the cooking wine on the tilapia. Marinate each side for 15 minutes.</li>
+      <li>Combine the cornstarch and flour in a resealable bag. Shake well. Put the marinated tilapia in the bag and shake until it is coated with flour and cornstarch mixture. Set aside.</li>
+      <li>Heat oil in a pan. Once the oil gets hot, gently fry one side of the tilapia in medium heat until it turns golden brown and crisp. Turn the fish over to cook the opposite side.</li>
+      <li>Remove the tilapia from the pan and put in a plate lined with paper towel.</li>
+      <li>Serve. Share and enjoy!</li>
+    </ol>
+  
+  </section>
+  
+ 
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Fili-Foodia. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>
